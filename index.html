@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoorthi Reddy | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      scroll-behavior: smooth;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(34,34,34,0.9);
+      padding: 15px 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      backdrop-filter: blur(5px);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #4a90e2;
+    }
+
+    /* Header */
+    header {
+      background: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1600&q=80") no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 150px 20px 100px;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+    header .content {
+      position: relative;
+      z-index: 2;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #4a90e2;
+      border-bottom: 2px solid #4a90e2;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="content">
+      <img src="profile.jpg" alt="Profile Photo">
+      <h1>Spoorthi Reddy Marapelli</h1>
+      <p>Aspiring Software Developer | Python | Flask | Django | Power BI</p>
+      <p>
+        📞 9381524584 | ✉️ <a href="mailto:reddyspoorthi99@gmail.com" style="color:white;">reddyspoorthi99@gmail.com</a> | 
+        🌍 <a href="https://github.com/reddyspoorthi99-tech" target="_blank" style="color:white;">GitHub</a>
+      </p>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Aspiring Software Developer with a strong foundation in Python, Flask, Django, and front-end technologies. Experienced in SQL, GitHub, and data visualization with Power BI. Passionate about learning new technologies and building impactful projects.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Health & Habit Tracker with AI Coach</h3>
+        <p>Interactive dashboard with AI-driven health recommendations using Python, Streamlit, Pandas, Plotly.</p>
+        <a href="https://github.com/reddyspoorthi99-tech/health-habit-tracker" target="_blank">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Weather Forecast App</h3>
+        <p>Real-time weather updates using Python, OpenWeather API, JSON.</p>
+        <a href="https://github.com/reddyspoorthi99-tech/weather-forecast-app" target="_blank">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Restaurant Billing System</h3>
+        <p>Automated billing with menu management, discounts, and receipt generation.</p>
+        <a href="https://github.com/reddyspoorthi99-tech/restaurant-billing-system" target="_blank">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Python Mini Projects Collection</h3>
+        <p>Collection of 15+ mini projects (To-Do List, Calculator, Banking System, Games).</p>
+        <a href="https://github.com/reddyspoorthi99-tech/python-mini-projects" target="_blank">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Power BI Projects</h3>
+        <p>Data visualization projects in market analysis and banking.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">Python, Flask, Django</div>
+      <div class="card">HTML, CSS, JavaScript, Bootstrap</div>
+      <div class="card">SQL, Git, GitHub</div>
+      <div class="card">NumPy, Pandas, Matplotlib</div>
+      <div class="card">Power BI, Excel, PowerPoint</div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="grid">
+      <div class="card"><b>Master Ji Degree & PG College</b> – B.C.A (2023–2025), 90%</div>
+      <div class="card"><b>Alphores Junior College</b> – (2019–2021), 91%</div>
+      <div class="card"><b>Carmel High School</b> – (2018–2019), 93%</div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="grid">
+      <div class="card">Python & AI Workshops (IIT Alumni, Analytics Vidhya, Udemy)</div>
+      <div class="card">Full Stack Web Development Internship – Edureka</div>
+      <div class="card">Microsoft Excel, PowerPoint, SQL, Power BI (Certified)</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📞 Phone: 9381524584</p>
+    <p>✉️ Email: <a href="mailto:reddyspoorthi99@gmail.com">reddyspoorthi99@gmail.com</a></p>
+    <p>🌍 GitHub: <a href="https://github.com/reddyspoorthi99-tech" target="_blank">github.com/reddyspoorthi99-tech</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Spoorthi Reddy. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
